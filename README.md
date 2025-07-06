@@ -14,7 +14,7 @@ yaml
 
 > Add these after deployment (optional)
 
-- **Frontend (Vercel/Netlify)**: growthai-pd2l2d9xk-revanths-projects-163f2d7c.vercel.app
+- **Frontend (Vercel/Netlify)**: https://growthai-pd2l2d9xk-revanths-projects-163f2d7c.vercel.app
 - **Backend (Render/Glitch)**: https://your-backend.render.com](https://growthai-bx64.onrender.com
 
 ---
