@@ -1,69 +1,87 @@
-# React + TypeScript + Vite
+# 🚀 GrowthProAI – Mini Local Business Dashboard
+This project is a Full Stack assignment for the GrowthProAI Internship. It simulates how small businesses might view their SEO content and Google Business data through a clean and responsive dashboard.
+---
+## 🧩 Project Structure
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GROWTHAI/
+├── frontend/ # React + Tailwind CSS Dashboard
+└── backend/ # Node.js + Express REST API (no DB)
 
-Currently, two official plugins are available:
+yaml
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Links
 
-## Expanding the ESLint configuration
+> Add these after deployment (optional)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend (Vercel/Netlify)**: [Live Dashboard Link](https://your-frontend.vercel.app)
+- **Backend (Render/Glitch)**: [API Server Link](https://your-backend.render.com)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🎯 Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Frontend (React + Tailwind)
+- Business Name & Location input form
+- Displays:
+  - Simulated Google Rating
+  - Number of Reviews
+  - Latest AI-generated SEO Headline
+- "Regenerate Headline" button (fetches a new one from backend)
+- Fully responsive layout with Tailwind CSS
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Backend (Node.js + Express)
+- `POST /business-data`  
+  Accepts name & location, returns rating, reviews, and SEO headline
+- `GET /regenerate-headline?name=...&location=...`  
+  Returns a new headline from a predefined list
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ How to Run Locally
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Clone Repository
+```bash
+git clone https://github.com/Satturevanth/GROWTHAI.git
+cd GROWTHAI
+🖥️ Frontend Setup (frontend/)
+bash
+cd frontend
+npm install
+npm run dev
+Open in browser: http://localhost:5173
+
+Make sure backend is running at http://localhost:5000 (or update the URL in frontend code)
+
+🔧 Backend Setup (backend/)
+bash
+cd backend
+npm install
+node index.js
+Server runs on: http://localhost:5000
+
+📦 Tech Stack
+Frontend: React, Vite, Tailwind CSS, Axios
+
+Backend: Node.js, Express.js
+
+Hosting (optional): Vercel / Netlify (Frontend), Render / Glitch (Backend)
+
+✅ Requirements Covered
+ React + Tailwind frontend with form and card
+
+ API integration for simulated data
+
+ Regenerate headline functionality
+
+ No database — all data is simulated
+
+ Optional deployment supported
+
+📩 Submission
+To submit your assignment:
+
+Push code to GitHub (✅ done)
+
+Submission: Full Stack Intern Assignment [Sattu Revanth]
+🙌 Thanks!
+Built with ❤️ for GrowthProAI Internship
