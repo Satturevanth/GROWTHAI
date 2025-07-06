@@ -15,7 +15,7 @@ yaml
 > Add these after deployment (optional)
 
 - **Frontend (Vercel/Netlify)**: [Live Dashboard Link](growthai-pd2l2d9xk-revanths-projects-163f2d7c.vercel.app)
-- **Backend (Render/Glitch)**: [API Server Link]([https://your-backend.render.com](https://growthai-bx64.onrender.com))
+- **Backend (Render/Glitch)**:https://your-backend.render.com](https://growthai-bx64.onrender.com
 
 ---
 
